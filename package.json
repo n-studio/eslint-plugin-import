@@ -33,7 +33,8 @@
     "prepublishOnly": "safe-publish-latest && npm run build",
     "prepublish": "not-in-publish || npm run prepublishOnly",
     "preupdate:eslint-docs": "npm run build",
-    "update:eslint-docs": "eslint-doc-generator --rule-doc-title-format prefix-name --rule-doc-section-options false --rule-list-split meta.docs.category --ignore-config stage-0 --config-emoji recommended,☑️"
+    "update:eslint-docs": "eslint-doc-generator --rule-doc-title-format prefix-name --rule-doc-section-options false --rule-list-split meta.docs.category --ignore-config stage-0 --config-emoji recommended,☑️",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
